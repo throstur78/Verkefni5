@@ -1,0 +1,100 @@
+/*
+ul: þarf að vera neðst
+li: þarf að hafa bil á milli
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 20px;
+  
+}
+
+.card__title{
+  width:100%;
+  word-wrap: break-word;
+  font-size: 1.375em;
+  line-height: 1.375em;
+}
+
+p{
+  line-height: 1.375em;
+}
+
+.cards {
+  display:flex;
+  background: #eee;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card__content{
+  display:flex;
+  margin-bottom: 10px;
+}
+
+.card__text
+{
+  word-wrap: break-word;
+  overflow:auto;
+  word-wrap: break-word;
+  
+}
+
+.card{
+  background-color: #fff;
+  width: 29.375em;
+  height: 18.75em;
+  display:flex;
+  flex-direction:column;
+  align-content: stretch;
+  margin-bottom:10px;
+  border: 5px solid #aaa;
+  border-radius: 5px;
+}
+
+.unstyled{
+  list-style-type: none;
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+
+
+li{
+  align-self: flex-end;
+  justify-items: normal;
+  font-weight: bold;
+  margin:2px;
+  
+}
+
+img{
+  max-width: 150px;
+}
+
+
+
+/*
+justify-content: space-around;
+align-items:stretch;
+stækka minnka: flex: 1 1 20em (Verð ekki minna en 20em.)
+stærðir: nota auto. Stærð verður skv. width og height
+*/
